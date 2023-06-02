@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simulador de Compra en Cuotas</h1>
+
+  <form id="formulario">
+    <label for="precio">Precio del producto:</label>
+    <input type="number" id="precio" name="precio" step="0.01" required>
+
+    <p>Seleccione la cantidad de cuotas:</p>
+    <label>
+      <input type="radio" name="cuotas" value="3"> 3 cuotas
+    </label>
+    <label>
+      <input type="radio" name="cuotas" value="6"> 6 cuotas
+    </label>
+    <label>
+      <input type="radio" name="cuotas" value="9"> 9 cuotas
+    </label>
+    <label>
+      <input type="radio" name="cuotas" value="12"> 12 cuotas
+    </label>
+
+    <button type="button" id="calcular">Calcular</button>
+  </form>
+
+  <section id="valorCuotas"></section>
+  <script src="/Punto3/js/app.js"></script>
+</body>
+</html>
